@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "PUBLIC_URL=\"//\" SKIP_PREFLIGHT_CHECK=true vite build",
-    "postbuild": "rm -rf ../public/ && mv dist ../public/",
+    "build": "PUBLIC_URL=\"/gradient-wizard/\" SKIP_PREFLIGHT_CHECK=true vite build",
     "preview": "vite preview"
   },
   "dependencies": {
