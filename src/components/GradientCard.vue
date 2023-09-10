@@ -1,5 +1,5 @@
 <template>
-    <button class="w-full h-56 lg:h-60 rounded-xl flex justify-center items-center focus:outline-none" v-clipboard:copy="gradient.style" v-clipboard:success="copied" @mouseover="copy = true" @mouseleave="copy = false" :class="gradient.style">
+    <button class="w-full h-56 lg:h-60 rounded-md flex justify-center items-center focus:outline-none" v-clipboard:copy="gradient.style" v-clipboard:success="copied" @mouseover="copy = true" @mouseleave="copy = false" :class="gradient.style">
         <transition 
             enter-active-class="duration-200 ease-in" 
             enter-from-class="scale-95 opacity-0" 
@@ -27,10 +27,10 @@
     </button>
 
     <div class="flex items-center justify-between mt-6 ">
-        <p v-text="gradient.title" class="text-lg font-medium text-gray-500"></p>
+        <p v-text="gradient.title" class="text-lg font-medium text-white"></p>
 
         <div class="flex items-center space-x-3 ">
-            <p v-text="gradient.classTitle" class="text-base font-medium text-gray-500"></p>
+            <p v-text="gradient.classTitle" class="text-base font-medium text-white"></p>
         </div>
     </div>
     
