@@ -1,5 +1,5 @@
 <template>
-    <div class="p-1.5 w-full  inline-block sm:w-auto overflow-hidden border-gray-200 bg-white border rounded-lg">
+    <div class="p-1.5 w-full  inline-block sm:w-auto overflow-hidden border-gray-200 bg-white border rounded">
         <div class="space-y-2 sm:space-y-0 sm:flex sm:space-x-2">
             <button @click="update('background')" :class="active == 'background' ? 'bg-gray-900 text-white' : 'text-gray-500 hover:bg-gray-100'" class="flex items-center justify-center w-full px-4 py-2.5 space-x-3 font-semibold transition-colors duration-300  rounded-md focus:outline-none sm:w-auto">
                 <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,7 +11,7 @@
                 </span>
             </button>
 
-            <button @click="update('text')"  :class="active == 'text' ? 'bg-gray-900 text-white' : 'text-gray-500 hover:bg-gray-100'" class="flex items-center justify-center w-full px-4 py-2.5 space-x-2 font-semibold transition-colors duration-300 rounded-md focus:outline-none sm:w-auto">
+            <button @click="update('text')"  :class="active == 'text' ? 'bg-neutral-900 text-white' : 'text-gray-500 hover:bg-gray-100'" class="flex items-center justify-center w-full px-4 py-2.5 space-x-2 font-semibold transition-colors duration-300 rounded-md focus:outline-none sm:w-auto">
                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_0_172)">
                     <path d="M4.15627 11.125C4.26564 11.125 4.37502 11.1797 4.45705 11.2617C4.53908 11.3438 4.59377 11.4531 4.59377 11.5625V12.4375C4.59377 12.5742 4.53908 12.6836 4.45705 12.7656C4.37502 12.8477 4.26564 12.875 4.15627 12.875H0.437515C0.300797 12.875 0.191422 12.8477 0.10939 12.7656C0.027359 12.6836 1.52588e-05 12.5742 1.52588e-05 12.4375V11.5625C1.52588e-05 11.4531 0.027359 11.3438 0.10939 11.2617C0.191422 11.1797 0.300797 11.125 0.437515 11.125H1.1758L4.73048 0.925781C4.73048 0.84375 4.78517 0.761719 4.8672 0.707031C4.94923 0.652344 5.03127 0.625 5.14064 0.625H7.10939C7.19142 0.625 7.27345 0.652344 7.35548 0.707031C7.43752 0.761719 7.4922 0.84375 7.51955 0.925781L11.0742 11.125H11.8125C11.9219 11.125 12.0313 11.1797 12.1133 11.2617C12.1953 11.3438 12.25 11.4531 12.25 11.5625V12.4375C12.25 12.5742 12.1953 12.6836 12.1133 12.7656C12.0313 12.8477 11.9219 12.875 11.8125 12.875H8.09377C7.95705 12.875 7.84767 12.8477 7.76564 12.7656C7.68361 12.6836 7.65627 12.5742 7.65627 12.4375V11.5625C7.65627 11.4531 7.68361 11.3438 7.76564 11.2617C7.84767 11.1797 7.95705 11.125 8.09377 11.125H8.72267L8.01173 8.91016H4.2383L3.50002 11.125H4.15627ZM5.90627 3.6875L4.75783 7.07812H7.46486L6.34377 3.6875C6.23439 3.38672 6.15236 3.08594 6.12502 2.75781C6.07033 3.08594 5.9883 3.38672 5.90627 3.6875Z" fill="currentColor"/>

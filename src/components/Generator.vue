@@ -1,6 +1,6 @@
 <template>
     <div class="container relative z-50 px-4 mx-auto -mt-16 2xl:-mt-28">
-        <div id="generator" class="p-6 bg-neutral-800 shadow-md lg:p-12 scroll-mt-6 rounded shadow-neutral-800/90">
+        <div id="generator" class="p-6 bg-neutral-900 shadow-md lg:p-12 scroll-mt-6 rounded shadow-neutral-800/90">
             <div class="flex justify-center mt-6 ">
                 <toggle-active @updated="updateActive" />
             </div>
@@ -63,11 +63,6 @@
                 </div>
 
                 <div class="relative mt-12 lg:flex lg:space-x-10 xl:space-x-16">
-                    <div class="w-full lg:w-1/2 xl:w-2/5">
-                        <h3 class="text-xl font-semibold text-gray-800 ">Settings</h3>
-
-                        <p class="max-w-md mt-2 text-white ">Add the third color if needed and set the direction of the gradient if you are looking for a linear-gradients or radial-gradient.</p>
-                    </div>
 
                     <div class="w-full mt-4 lg:w-1/2 xl:w-3/5 lg:mt-0">
                         <div class="md:flex md:items-center md:space-x-4">
