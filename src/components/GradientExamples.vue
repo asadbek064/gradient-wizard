@@ -1,11 +1,9 @@
 <template>
     <div class="container px-4 py-20 mx-auto ">
         <div class="flex flex-col items-center text-center ">
-            <h2 class="text-3xl font-bold text-transparent bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 bg-clip-text">Ready to Use</h2>
-
-            <h2 class="mt-4 text-3xl font-bold text-white ">Awesome Gradients Examples</h2>
-            
-            <p class="mt-4 text-white ">Choose from our ready-made Tailwind CSS gradients to create beautiful cards, mobile apps, and websites.</p>
+            <h2 class="[font-size:var(--step-3)] md:[font-size:var(--step-5)] font-bold text-transparent bg-gradient-to-r from-sky-500 via-blue-500 to-blue-600 bg-clip-text">Awesome Gradients Examples</h2>
+        
+            <p class="mt-4 text-gray-400 ">Choose from our ready-made Tailwind CSS gradients.</p>
         </div>
 
         

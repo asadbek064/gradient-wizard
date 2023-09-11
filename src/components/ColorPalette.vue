@@ -1,22 +1,22 @@
 <template>
     <div class="flex flex-col flex-1 max-h-72 md:max-h-96 xl:max-h-[28rem]">
         <div class="flex items-center space-x-8">
-            <button :disabled="isChange" @click="select = 'from'" :class="select == 'from' ? 'text-white' : 'text-gray-400 hover:text-sky-500'" class="font-semibold focus:outline-none">
+            <button :disabled="isChange" @click="select = 'from'" :class="select == 'from' ? 'text-sky-500' : 'text-gray-400 hover:text-sky-500'" class="font-semibold focus:outline-none">
                 From Color
             </button>
 
-            <button v-if="viaActive" :disabled="isChange" @click="select = 'via'" :class="select == 'via' ? 'text-white' : 'text-gray-400 hover:text-gray-600'" class="font-semibold transition-colors duration-300 focus:outline-none">
+            <button v-if="viaActive" :disabled="isChange" @click="select = 'via'" :class="select == 'via' ? 'text-sky-500' : 'text-gray-400 hover:text-gray-600'" class="font-semibold transition-colors duration-300 focus:outline-none">
                 Via Color
             </button>
 
-            <button :disabled="isChange" @click="select = 'to'" :class="select == 'to' ? 'text-white' : 'text-gray-400 hover:text-gray-600'" class="font-semibold transition-colors duration-300 focus:outline-none">
+            <button :disabled="isChange" @click="select = 'to'" :class="select == 'to' ? 'text-sky-500' : 'text-gray-400 hover:text-gray-600'" class="font-semibold transition-colors duration-300 focus:outline-none">
                 To Color
             </button>
         </div>
 
-        <div id="colors" class="relative flex-1 w-full h-64 px-6 py-4 mt-4 space-y-6 overflow-y-auto border rounded-lg">
+        <div id="colors" class="relative flex-1 w-full h-64 px-6 py-4 mt-4 space-y-6 overflow-y-auto border rounded-md bg-white">
              <div v-for="(color, index) in colors" :key="index">
-                <p class="mb-2 text-white font-bold capitalize" v-text="color"></p>
+                <p class="mb-2 text-gray-600 font-bold capitalize" v-text="color"></p>
                 
                 <div class="grid grid-cols-4 gap-6 md:gap-4 2xl:gap-6 sm:grid-cols-7 md:grid-cols-10 lg:grid-cols-6 xl:grid-cols-10">
                     <div v-for="(number, index) in values" :key="index" >
@@ -28,17 +28,17 @@
                             >
                             </button>
                             
-                            <p class="mt-1 text-sm text-center" :class="selectedColor(select + '-' + color + '-' + number) ? 'text-[#0FD3CF] font-bold' : 'text-gray-200 font-medium'" v-text="number"></p>
+                            <p class="mt-1 text-sm text-center" :class="selectedColor(select + '-' + color + '-' + number) ? 'text-[#0FD3CF] font-bold' : 'text-gray-500 font-medium'" v-text="number"></p>
                         </div>
                     </div>
                 </div>
             </div>
 
             <transition 
-                enter-active-class="duration-150 ease-in" 
+                enter-active-class="duration-75 ease-in" 
                 enter-from-class="scale-95 opacity-0" 
                 enter-to-class="scale-100 spacity-100" 
-                leave-active-class="duration-200 ease-out" 
+                leave-active-class="duration-75 ease-out" 
                 leave-from-class="scale-100 opacity-100" 
                 leave-to-class="scale-95 opacity-0"
             >
