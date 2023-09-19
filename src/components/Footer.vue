@@ -1,7 +1,7 @@
 <template>
     <div class="bg-neutral-900">
         <div class="container flex flex-col items-center px-4 py-6 mx-auto space-y-6 lg:space-y-0 lg:flex-row lg:justify-between">
-            <div class="w-48 text-white">
+            <div class="w-22 text-white">
                 <img class="object-cover object-left h-6" src="../assets/logo.svg" alt="Gradient Wizard logo">
             </div>
 

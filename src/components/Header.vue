@@ -1,12 +1,12 @@
 <template>
-    <header class="bg-white">
-        <nav class="container flex items-center justify-between px-4 py-6 mx-auto">
+    <header class="bg-white h-[12rem] lg:h-[18rem]">
+        <nav class="container flex items-center px-4 py-6 mx-auto">
             <div class="flex items-center">  
                 <img class="h-6 pl-1 mt-2 border-l-2" src="../assets/logo.svg" alt="logo"> 
-                <div class="pl-4 pt-2 font-bold text-2xl bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Gradient Wizard</div>
+                <div class="pl-4 pt-2 font-bold text-2xl bg-gradient-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">Tailwind CSS Gradient Generator</div>
             </div>
 
-            <div class="flex items-center space-x-3">
+            <div class="flex items-center pt-2  ml-8 space-x-3">
                 <github-stars />
                 <a target="_blank" href="https://github.com/asadbek064/gradient-wizard" class="text-gray-900 transition-colors duration-300 hover:text-primary" aria-label="Github">
                     <svg width="24" height="24" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -15,16 +15,6 @@
                 </a>
             </div>
         </nav>
-        
-        <div class="relative">
-            <img class=" z-10 absolute h-[16rem] 2xl:h-[22rem] w-full object-cover" src="../assets/header.png" alt="header image ">
-
-            <div class=" flex items-center relative z-20 h-[16rem] 2xl:h-[22rem] container mx-auto px-4 ">
-                <div class="text-white ">
-                    <h1 class="mt-3 text-4xl font-bold ">Tailwind CSS Gradient Generator</h1>
-                </div>
-            </div>
-        </div>
     </header>
 </template>
 
