@@ -9,5 +9,5 @@ createApp(App).use(VueClipboard, {
     autoSetContainer: true,
     appendToBody: true,
 }).use(VueAnalytics, {
-  id: 'UA-110182129-1'
+  id: '#'
 }).mount('#app');
